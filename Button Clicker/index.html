@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+	<style>
+		body{
+			font-family: "Comic Sans MS";
+			background-image: url("background.jpg");
+		}	
+		p{
+			font-size: 64px;
+			text-align: center;
+		}
+		button{
+			font-size: 32px;
+		}
+	</style>
+		<meta charset='utf-8'/>
+		<title>This page sucks</title>
+
+	</head>
+	<body>	<div id='clock'>Timer: 30</div>
+		<p id="score">Clicked 0 times</p>
+		<button id='mover' style ='position:absolute; top:50%; left:45%;' onclick="move();">Click Me</button>
+
+		<script>
+alert("Try to click the button 31337 times before your timer runs out :)");
+var score = 0;
+var time = 30;
+var timer = setInterval(tic, 1000);
+function move() {
+	document.getElementById('mover').style = "position: absolute; left:"+Math.random()*90 + 5+"%; top:"+Math.random()*90 + 5+"%;";
+	score += 1;
+	document.getElementById("score").innerHTML = "Clicked "+score+ " times";
+	if(score == 31337){
+		alert('YAY!');
+		clearInterval(timer);
+	}
+}
+function tic(){
+	document.getElementById('clock').innerHTML = "Timer: " + time;
+	if(time == 0){
+		alert("NOPE");
+		location.reload(true);
+	}else{
+		time--;
+	}
+
+}
+		</script>
+	</body>
+</html>
