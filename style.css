@@ -1,78 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 html{
-  height: 100%;
-  font-family: "Comic Sans MS";
-  background: #444;
-}
-body{
-  margin:0 auto;
-}
-header{
   position: relative;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  background-color: #999;
-  border: solid 4px #888
-}
-header h1{
-  font-size: 40px;
-}
-aside{
-  max-width: 60%;
-  display: block;
-  border: solid 4px #888;
-  border-radius: 5px;
-  display: block;
-  margin: 10px;
-  padding: 5px;
-  padding-left: 10px;
-  float: right;
-  background-color: #999;;
-}
-aside h3{
-  font-size: 30px;
-  text-align: center;
-}
-article{
-  display: block;
-  margin: 10px;
-  padding: 5px;
-  padding-left: 10px;
-  float: left;
-  border: solid 4px #888;
-  border-radius: 5px;
-  background-color: #999;;
-}
-article h3{
-  font-size: 30px;
-}
-table, th, tr{
-  border: solid 3px black;
-  border-radius: 5px;
-  border-collapse:collapse;
-}
-th, tr{
-  font-size: 20px;
-}
-th{
-  font-weight: normal;
-  padding: 4px;
-}
-a:link{
-  color:#333;
-}
-a:visited{
-  color: #444;
-}
-a:active{
-  color:white;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media(max-width: 480px) {
-    header h1{
-      font-size:20px;
-    }
-    aside{
-        font-size:30px;
-    }
+body{
+  color: #ddd;
+  background-color:#111;
+  min-height:100%;
+}
+
+div{
+  margin:20px;
+}
+
+.page{
+  padding:10px;
+  font-size:14pt;
+  background-color:#222;
+  margin:auto;
+  text-align: center;
+  width:50%;
 }
